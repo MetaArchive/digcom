@@ -1,6 +1,6 @@
 # digcom
 ## Overview
-A helpful script to identify LOCKSS Archival Units for Digital Commons collections. The script prints a list of all archival unit parameters and ids for a given collection for reference and import into a LOCKSS Title DB. For MetaArchive users they should use the MetaArchive output mode when running the script and provide the full URL for a collection manifest page. 
+A helpful script to identify LOCKSS Archival Units for Digital Commons collections. The script prints a list of all archival unit parameters and ids for a given collection for reference and import into a LOCKSS Title DB or the MetaArchive Conspectus. For MetaArchive users they should use the MetaArchive output mode when running the script and provide the full URL for a collection manifest page. 
 
 ## Usage
 $ ./digcom.py -h
