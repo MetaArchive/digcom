@@ -1,6 +1,6 @@
 # digcom
 ## Overview
-A helpful script to identify LOCKSS Archival Units for Digital Commons collections.
+A helpful script to identify LOCKSS Archival Units for Digital Commons collections. The script prints a list of all archival unit parameters and ids for a given collection for reference and import into a LOCKSS Title DB.
 
 ## Usage
 $ ./digcom.py -h
