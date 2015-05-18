@@ -28,7 +28,7 @@
 # in this Software without prior written authorization from Stanford University.
 #
 
-__version__ = '0.2.1'
+__version__ = '0.2.2'
 
 import optparse
 import re
@@ -151,8 +151,8 @@ def do_series(options, base_url, collection_type, collection):
     index_url = None
     i = i + 1
     for line in r.readlines():
-      mat = re.search(r'class="lockss_([^"]+)"', line)
-      if mat is not None and mat.group(1) not in headings: headings.append(mat.group(1))
+      for y in re.findall(r'class="lockss_([^"]+)"', line):
+        if y not in headings: headings.append(y)
       mat = re.search(r'href="((' + base_url + collection + r'/)?index\.' + str(i) + r'\.html)"', line)
       if mat is not None: index_url = mat.group(1)
   headings.sort()
